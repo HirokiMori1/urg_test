@@ -1,0 +1,16 @@
+<launch>
+  <arg name="urg_port" value="/dev/ttyACM0" />
+  <arg name="urg_ip" value="10.255.255.4" />
+
+  <!-- run urg node -->
+  <node pkg="urg_node" name="urg_node" type="urg_node">
+    <param name="serial_port" value="$(arg urg_port)" />
+    <!--param name="ip_address" value="$(arg urg_ip)" /-->
+    <!--param name="calibrate_time" type="bool" value="false" /-->
+    <!--param name="intensity" type="bool" value="false" /-->
+    <!--param name="angle_min" value="-2.2" /-->
+    <!--param name="angle_max" value="2.2" /-->
+    <!--param name="cluster" value="1" /-->
+    <!--param name="skip" value="1" /-->
+  </node>
+</launch>
